@@ -1,0 +1,72 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Arial', sans-serif;
+}
+html{
+	font-size:16px;
+	scroll-behavior: smooth;
+}
+.backdrop{
+	background: linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.38)), url("./assets/pg.jpg");
+	 background-position:center;
+	 background-repeat:no-repeat;
+	 background-size:Cover;
+	 height:100vh;
+}
+
+.container{
+	width:100%;
+	text-align:center;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.book{
+	text-decoration:none;
+	background:#FF0000;
+	padding:14px 25px;
+	color:white;
+	font-size:20px;
+	display:inline-block;
+	letter-spacing:1.5px;
+	border-radius:5px;
+}
+.container a{
+	color:white;
+	text-decoration:none;
+
+}
+.book:hover{
+	background:	#04AA6D;
+	transition:0.5s ease;
+}
+.nav{
+	display:flex;
+	justify-content:space-around;
+	background:transparent;
+	padding:10px;
+	background: linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.38));
+}
+.nav a{
+	font-size:18px;
+	font-weight:600px;
+	letter-spacing:1.5px;
+	color:#fff;
+	text-decoration:none;
+}
+.nav a:hover{
+	color:#FF0000;
+	transition:0.5s ease;
+}
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+	.backdrop{
+		height:140vh;
+	}
+	.container{
+	position:relative;
+	bottom:10px;
+	}
+}
